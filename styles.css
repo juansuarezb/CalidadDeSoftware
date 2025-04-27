@@ -185,3 +185,57 @@ code {
   margin-bottom: 5px;
   color: #E74C3C; /* Rojo para destacar */
 }
+
+
+
+.homework {
+  position: relative;
+  background-color: #E1F5FE; /* Azul claro suave */
+  color: #01579B; /* Azul oscuro para texto */
+  padding: 15px;
+  margin: 20px 0;
+  border-radius: 3px;
+  box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.1);
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  border-left: 4px solid #0288D1;
+  counter-reset: task-counter; /* Para numerar tareas */
+}
+
+.homework::before {
+  content: "📋 Tarea";
+  font-weight: bold;
+  display: block;
+  margin-bottom: 10px;
+  color: #0277BD;
+  font-size: 1.1em;
+}
+
+.homework-item {
+  position: relative;
+  padding-left: 25px;
+  margin-bottom: 8px;
+  line-height: 1.4;
+}
+
+.homework-item::before {
+  counter-increment: task-counter;
+  content: counter(task-counter) ".";
+  position: absolute;
+  left: 0;
+  color: #E65100; /* Naranja para los números */
+  font-weight: bold;
+}
+
+.homework-item:last-child {
+  margin-bottom: 0;
+}
+
+.homework-urgent {
+  background-color: #FFEBEE; /* Rojo muy claro */
+  border-left-color: #C62828;
+}
+
+.homework-urgent::before {
+  content: "⚠️ Tareas urgentes:";
+  color: #C62828;
+}
