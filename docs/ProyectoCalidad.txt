@@ -1,0 +1,35 @@
+Proyecto v1 25/05/2025
+Grupos autorganizados (2 desarrollos, 2 pruebas y calidad (alcance requerimientos arquitectura y diseño))
+
+Proyecto: "Yoga Terapeútico"
+
+
+Producto para ayudar a planificar una terapia para personas que sufran:
+Cuando el usuario instructor se loguee en la aplicación el va a poder escoger:
+ANSIEDAD: 20
+ARTRITIS: 6
+DOLOR DE ESPALDA: 23
+DOLOR DE CABEZA: 17 
+INSOMNIO: 16
+MALA POSTURA: 27 
+(NO ACTUALIZABLES, OPCIONES FIJAS)
+Caso: Cesar va a tener un problema de dolor de espalda -> selecciona dolor de espalda -> el usuario instructor creará una serie de yoga 
+terapeutica para un paciente.
+
+	*Seleccionando posturas en orden en un listado filtrado(MINIMO 12 POSTURAS POR TIPO DE PROBLEMA)*
+	*Del ejemplo vamos a usar el filtro #4*
+	*Migrar la data al español y en sanscrito colocar los nombres de las posturas*
+
+*USUARIO INSTRUCTOR* *El usuario instructor configura una serie personalizada {duracion de cada posturas, posturas, orden de aparición, 
+# de sesiones
+
+*USUARIO PACIENTE* persona que no sabe de yoga y que tiene un problema a la vez. La aplicacion 
+Cuando el usuario paciente se loguee le apareceran las series personalizadas por el instructor.
+Mira la foto de la postura y la sostiene x el tiempo de configurado
+se puede pausar la sesion (break para ver instrucciones y se puede ver un video demostrativo)
+
+
+*La foto y el video deben ser la misma persona*
+*Una misma postura puede servir para tipos de terapia* Relacion N a N
+*Cuando el instructor selecciona una dolencia aparezcan minimo 12 posturas*
+
